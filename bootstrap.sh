@@ -1,27 +1,29 @@
 #!/bin/bash
 
-## ########################################################################################################
-## UBUNTU 18.04 CONFIGURATION SCRIPT                                                                      #
-## -------------------------------------------------------------------------------------------------------#
-## UNIVERSIDADE FEDERAL DO TOCANTINS [UFT] (Federal University of Tocantins)                              #                                                              #
-## Palmas, TOCANTINS - BRAZIL                                                                             #
-## André Barcelos Silva [barcelos@uft.edu.br]                                                             #
-## github.com/andrebsilva                                                                                 #
-## -------------------------------------------------------------------------------------------------------#
-## READ ME: FIRST SIX STEPS                                                                               #
-##	1)	Access BOOTSTRAP directory                                                                #
-##			cd BOOTSTRAP/                                                                     #
-##	2)	Create directory for deb packages, and set DIRTOOLS var bellow                            #
-##			$ mkdir toolstoinstall                                                            #
-##	3)	Move all deb packages downloaded to that directory                                        #
-##			$ mv ~/Downloads/*.deb toolstoinstall/                                            #
-##	4)	Create directory for deb packages already installed, and set DIRINSTALLED variable bellow #
-##			$ mkdir installedtools                                                            #
-##	4)	Add execution permission to the shell script file                                         #
-##			$ chmod +x bootstrap.sh                                                           #
-##	6)	Execute shell script file with parameter: password of the sudo                            #
-##			$ ./bootstrap.sh p@ssw0rd                                                         #
-## ########################################################################################################
+## ##############################################################################################
+## UBUNTU 18.04 CONFIGURATION SCRIPT                                                            #
+## -------------------------------------------------------------------------------------------- #
+## UNIVERSIDADE FEDERAL DO TOCANTINS [UFT] (Federal University of Tocantins)                    #                                                              #
+## Palmas, TOCANTINS - BRAZIL                                                                   #
+## André Barcelos Silva [barcelos@uft.edu.br]                                                   #
+## github.com/andrebsilva                                                                       #
+## -------------------------------------------------------------------------------------------- #
+## FIRST SEVEN STEPS:                                                                           #
+## 1) Clone this git repository                                                                 #
+##	$ git clone https://github.com/andrebsilva/shell-scripts.git                            #
+## 2) Access BOOTSTRAP directory                                                                #
+##	$ cd shell-scripts                                                                      #
+## 3) Create directory for deb packages, and set DIRTOOLS var bellow                            #
+##	$ mkdir toolstoinstall                                                                  #
+## 4) Move all deb packages downloaded to that directory                                        #
+##	$ mv ~/Downloads/*.deb toolstoinstall/                                                  #
+## 5) Create directory for deb packages already installed, and set DIRINSTALLED variable bellow #
+##	$ mkdir installedtools                                                                  #
+## 6) Add execution permission to the shell script file                                         #
+##	$ chmod +x bootstrap.sh                                                                 #
+## 7) Execute shell script file with parameter: password of the sudo                            #
+##	$ ./bootstrap.sh p@ssw0rd                                                               #
+## ##############################################################################################
 
 ## SUDO PASSWORD (#1 Parameter)
 SUDOPASS=$1
