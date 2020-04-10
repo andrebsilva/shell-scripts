@@ -57,7 +57,7 @@ dlpkg="dialog"
 check=$(dpkg -s "$dlpkg" | grep installed)
 if [ "" == "$check" ]; then
 	sudo apt update
-    sudo apt install "$dlpkg" -y
+	sudo apt install "$dlpkg" -y
 else
 	dialog --title "$DLTITLE" --msgbox "\n\n$dlpkg package already installed." $DLH $DLW
 fi
